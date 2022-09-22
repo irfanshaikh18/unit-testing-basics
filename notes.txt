@@ -1,0 +1,28 @@
+(1) React Testing Library and Jest both have different responsibilities "react testing library" is not a test runner meaning when u enter 
+command npm test or npm run test it is jest responsibility that collect all the files ending with .test.js and runs each test case and show 
+pass and fail results in your console.
+
+(2) react testing library provides you function to catch dom element and perform some action below are some of its function
+
+render, fireEvent, waitFor, screen
+
+you can also use Enzyme(another popular testing library) for such function to access dom element
+
+(3) EXTRA: developer often confuse among
+
+jest
+react-testing-library
+Enzyme
+
+Here Enzyme and react-testing-library are two similar things and alternatives to each other means you can use
+
+- enzyme with jest or
+- react-testing-library with jest
+- you can also use all three i.e react-testing-library+Enzyme with jest
+- but you can not use Enzyme and react-testing-library without jest or any other test runner eg: Mocha
+
+(4) where jest(testing-framework) will collect all .test.js files execute all the test cases and put the output in console with detail like how many 
+pass and fail and react-testing-library or enzyme(both are testing library) will help you to perform event and accessing dom element.
+
+
+// https://stackoverflow.com/questions/66341449/testing-library-react-vs-jest
